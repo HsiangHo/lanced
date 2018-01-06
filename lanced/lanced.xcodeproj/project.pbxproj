@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		98F634D62000963700196023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634D52000963700196023 /* main.m */; };
+		98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634DD2000988E00196023 /* LDFileKeeper.m */; };
+		98F634E320009EFE00196023 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634E120009EFE00196023 /* VDKQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		98F634D22000963700196023 /* lanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lanced; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F634D52000963700196023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98F634DC2000988E00196023 /* LDFileKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDFileKeeper.h; sourceTree = "<group>"; };
+		98F634DD2000988E00196023 /* LDFileKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDFileKeeper.m; sourceTree = "<group>"; };
+		98F634E120009EFE00196023 /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
+		98F634E220009EFE00196023 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		98F634D42000963700196023 /* lanced */ = {
 			isa = PBXGroup;
 			children = (
+				98F634E020009EE900196023 /* fileKeeper */,
 				98F634D52000963700196023 /* main.m */,
 			);
 			path = lanced;
+			sourceTree = "<group>";
+		};
+		98F634E020009EE900196023 /* fileKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				98F634E220009EFE00196023 /* VDKQueue.h */,
+				98F634E120009EFE00196023 /* VDKQueue.m */,
+				98F634DC2000988E00196023 /* LDFileKeeper.h */,
+				98F634DD2000988E00196023 /* LDFileKeeper.m */,
+			);
+			name = fileKeeper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F634D62000963700196023 /* main.m in Sources */,
+				98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */,
+				98F634E320009EFE00196023 /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
