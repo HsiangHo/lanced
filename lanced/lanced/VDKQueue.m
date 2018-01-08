@@ -405,6 +405,10 @@ NSString * VDKQueueAccessRevocationNotification = @"VDKQueueAccessWasRevokedNoti
         
         // Remove it only if we're watching it.
         if (entry) {
+            struct kevent        ev;
+            struct timespec      nullts = { 0, 0 };
+            EV_SET(&ev, [entry watchedFD], EVFILT_VNODE, EV_DELETE, 0, 0, entry);
+            kevent(_coreQueueFD, &ev, 1, NULL, 0, &nullts);
             [_watchedPathEntries removeObjectForKey:aPath];
         }
 	}
@@ -417,7 +421,14 @@ NSString * VDKQueueAccessRevocationNotification = @"VDKQueueAccessWasRevokedNoti
 {
     @synchronized(self)
     {
-        [_watchedPathEntries removeAllObjects];
+//        [_watchedPathEntries removeAllObjects];
+        for (VDKQueuePathEntry *entry in [_watchedPathEntries allValues]) {
+            struct kevent        ev;
+            struct timespec      nullts = { 0, 0 };
+            EV_SET(&ev, [entry watchedFD], EVFILT_VNODE, EV_DELETE, 0, 0, entry);
+            kevent(_coreQueueFD, &ev, 1, NULL, 0, &nullts);
+            [_watchedPathEntries removeObjectForKey:[entry path]];
+        }
     }
 }
 
