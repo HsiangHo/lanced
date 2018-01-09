@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		980917872004D6EB00A53BB1 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 980917862004D6EB00A53BB1 /* LDProcessKeeper.mm */; };
+		98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */; };
 		98F634D62000963700196023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634D52000963700196023 /* main.m */; };
 		98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634DD2000988E00196023 /* LDFileKeeper.m */; };
 		98F634E320009EFE00196023 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634E120009EFE00196023 /* VDKQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -26,8 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		980917852004D6EB00A53BB1 /* LDProcessKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDProcessKeeper.h; sourceTree = "<group>"; };
-		980917862004D6EB00A53BB1 /* LDProcessKeeper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LDProcessKeeper.mm; sourceTree = "<group>"; };
+		98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDProcessKeeper.mm; sourceTree = "<group>"; };
+		98DF00262005238800B4B3C2 /* LDProcessKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDProcessKeeper.h; sourceTree = "<group>"; };
 		98F634D22000963700196023 /* lanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lanced; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F634D52000963700196023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98F634DC2000988E00196023 /* LDFileKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDFileKeeper.h; sourceTree = "<group>"; };
@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98DF00242005237600B4B3C2 /* processKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				98DF00262005238800B4B3C2 /* LDProcessKeeper.h */,
+				98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */,
+			);
+			name = processKeeper;
+			sourceTree = "<group>";
+		};
 		98F634C92000963700196023 = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +75,7 @@
 		98F634D42000963700196023 /* lanced */ = {
 			isa = PBXGroup;
 			children = (
-				98F634EA2003CB2300196023 /* progressKeeper */,
+				98DF00242005237600B4B3C2 /* processKeeper */,
 				98F634E020009EE900196023 /* fileKeeper */,
 				98F634D52000963700196023 /* main.m */,
 			);
@@ -82,15 +91,6 @@
 				98F634DD2000988E00196023 /* LDFileKeeper.m */,
 			);
 			name = fileKeeper;
-			sourceTree = "<group>";
-		};
-		98F634EA2003CB2300196023 /* progressKeeper */ = {
-			isa = PBXGroup;
-			children = (
-				980917852004D6EB00A53BB1 /* LDProcessKeeper.h */,
-				980917862004D6EB00A53BB1 /* LDProcessKeeper.mm */,
-			);
-			path = progressKeeper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F634D62000963700196023 /* main.m in Sources */,
+				98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */,
 				98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */,
-				980917872004D6EB00A53BB1 /* LDProcessKeeper.mm in Sources */,
 				98F634E320009EFE00196023 /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

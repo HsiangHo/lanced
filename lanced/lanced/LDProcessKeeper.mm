@@ -119,7 +119,7 @@ static LDProcessKeeper    *instance;
 }
 
 -(void)__keepProcess:(LDProcessObject *)obj{
-    //start process
+    //restart process
     [[NSWorkspace sharedWorkspace] launchApplication:[obj processPath]];
 }
 
