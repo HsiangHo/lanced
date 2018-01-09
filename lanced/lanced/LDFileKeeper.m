@@ -13,6 +13,7 @@ static LDFileKeeper    *instance;
 @implementation LDFileKeeper{
     VDKQueue        *_queue;
     NSMutableArray  *_arrayFilePaths;
+    BOOL            _isRunning;
 }
 
 #pragma mark - Public methods
@@ -48,9 +49,18 @@ static LDFileKeeper    *instance;
     [_arrayFilePaths removeAllObjects];
 }
 
+-(void)setRunning:(BOOL)value{
+    _isRunning = value;
+}
+
+-(BOOL)isRunning{
+    return _isRunning;
+}
+
 #pragma mark - Private methods
 
 -(void)__initializeLDFileKeeper{
+    _isRunning = YES;
     _arrayFilePaths = [[NSMutableArray alloc] init];
     _queue = [[VDKQueue alloc] init];
     [_queue setDelegate:(id<VDKQueueDelegate>)self];
@@ -83,7 +93,9 @@ static LDFileKeeper    *instance;
 #pragma mark - Delegate methods
 
 -(void) VDKQueue:(VDKQueue *)queue receivedNotification:(NSString*)noteName forPath:(NSString*)fpath{
-    [self __protectOneFile:fpath withFlag:YES];
+    if(_isRunning){
+        [self __protectOneFile:fpath withFlag:YES];
+    }
 }
 
 @end

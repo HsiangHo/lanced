@@ -10,6 +10,8 @@
 
 @interface LDFileKeeper : NSObject
 
+@property (nonatomic,getter=isRunning)   BOOL        running;
+
 +(instancetype)sharedInstance;
 -(void)addFile:(NSString *)filePath;
 -(void)removeFile:(NSString *)filePath;
