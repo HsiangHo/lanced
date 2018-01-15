@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9800156F2006372D00785AF8 /* LDLocalConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9800156E2006372D00785AF8 /* LDLocalConfigure.m */; };
 		98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */; };
 		98F634D62000963700196023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634D52000963700196023 /* main.m */; };
 		98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634DD2000988E00196023 /* LDFileKeeper.m */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9800156D2006372D00785AF8 /* LDLocalConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDLocalConfigure.h; sourceTree = "<group>"; };
+		9800156E2006372D00785AF8 /* LDLocalConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDLocalConfigure.m; sourceTree = "<group>"; };
 		98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDProcessKeeper.mm; sourceTree = "<group>"; };
 		98DF00262005238800B4B3C2 /* LDProcessKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDProcessKeeper.h; sourceTree = "<group>"; };
 		98F634D22000963700196023 /* lanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lanced; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9800156C2006346200785AF8 /* localConfigure */ = {
+			isa = PBXGroup;
+			children = (
+				9800156D2006372D00785AF8 /* LDLocalConfigure.h */,
+				9800156E2006372D00785AF8 /* LDLocalConfigure.m */,
+			);
+			name = localConfigure;
+			sourceTree = "<group>";
+		};
 		98DF00242005237600B4B3C2 /* processKeeper */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +87,7 @@
 		98F634D42000963700196023 /* lanced */ = {
 			isa = PBXGroup;
 			children = (
+				9800156C2006346200785AF8 /* localConfigure */,
 				98DF00242005237600B4B3C2 /* processKeeper */,
 				98F634E020009EE900196023 /* fileKeeper */,
 				98F634D52000963700196023 /* main.m */,
@@ -153,6 +166,7 @@
 				98F634D62000963700196023 /* main.m in Sources */,
 				98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */,
 				98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */,
+				9800156F2006372D00785AF8 /* LDLocalConfigure.m in Sources */,
 				98F634E320009EFE00196023 /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
