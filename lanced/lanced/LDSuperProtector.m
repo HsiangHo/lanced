@@ -48,6 +48,25 @@ static LDSuperProtector *instance;
     return _isRunning;
 }
 
+-(void)installProtector{
+    [[LDLocalConfigure sharedInstance] registerDaemon];
+    [[LDLocalConfigure sharedInstance] unloadDaemon];
+    [[LDLocalConfigure sharedInstance] loadDaemon];
+}
+
+-(void)uninstallProtector{
+    [[LDLocalConfigure sharedInstance] unloadDaemon];
+    [[LDLocalConfigure sharedInstance] unregisterDaemon];
+}
+
+-(void)loadProtector{
+    [[LDLocalConfigure sharedInstance] loadDaemon];
+}
+
+-(void)unloadProtector{
+    [[LDLocalConfigure sharedInstance] unloadDaemon];
+}
+
 #pragma mark - Private methods
 -(void)__initializeLDSuperProtector{
     _isRunning = NO;

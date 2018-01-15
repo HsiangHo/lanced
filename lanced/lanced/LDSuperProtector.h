@@ -15,4 +15,9 @@
 -(void)stop;
 -(BOOL)isRunning;
 
+-(void)installProtector;
+-(void)uninstallProtector;
+-(void)loadProtector;
+-(void)unloadProtector;
+
 @end
