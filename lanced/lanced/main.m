@@ -7,11 +7,45 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RunScript.h"
+#import "LDSuperProtector.h"
+
+#define EXEC_PATH           [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/lanced"]
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        uid_t uid = geteuid();
+        if(0 == uid){
+            setuid(0);
+            if (1 == argc) {
+                [[LDSuperProtector sharedInstance] start];
+                CFRunLoopRun();
+            }else if (2 <= argc) {
+                int nFlag = atoi(argv[1]);
+                switch (nFlag) {
+                    case 0:
+                        [[LDSuperProtector sharedInstance] loadProtector];
+                        break;
+                    case 1:
+                        [[LDSuperProtector sharedInstance] unloadProtector];
+                        break;
+                    case 2:
+                        [[LDSuperProtector sharedInstance] installProtector];
+                        break;
+                    case 3:
+                        [[LDSuperProtector sharedInstance] uninstallProtector];
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }else{
+            char * const * p = NULL;
+            if (1 < argc) {
+                p = (char * const *)&argv[1];
+            }
+            [RunScript RunTool:EXEC_PATH whithArguments:p];
+        }
     }
     return 0;
 }
