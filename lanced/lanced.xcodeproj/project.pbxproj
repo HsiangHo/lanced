@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9800156F2006372D00785AF8 /* LDLocalConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9800156E2006372D00785AF8 /* LDLocalConfigure.m */; };
 		98AB70D0200D045A006FA54C /* LDSuperProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70CF200D045A006FA54C /* LDSuperProtector.m */; };
+		98AB70E9200E2CBE006FA54C /* RunScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70E7200E2CBD006FA54C /* RunScript.m */; };
 		98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */; };
 		98F634D62000963700196023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634D52000963700196023 /* main.m */; };
 		98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634DD2000988E00196023 /* LDFileKeeper.m */; };
@@ -32,6 +33,8 @@
 		9800156E2006372D00785AF8 /* LDLocalConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDLocalConfigure.m; sourceTree = "<group>"; };
 		98AB70CE200D045A006FA54C /* LDSuperProtector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSuperProtector.h; sourceTree = "<group>"; };
 		98AB70CF200D045A006FA54C /* LDSuperProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSuperProtector.m; sourceTree = "<group>"; };
+		98AB70E7200E2CBD006FA54C /* RunScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunScript.m; sourceTree = "<group>"; };
+		98AB70E8200E2CBE006FA54C /* RunScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunScript.h; sourceTree = "<group>"; };
 		98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDProcessKeeper.mm; sourceTree = "<group>"; };
 		98DF00262005238800B4B3C2 /* LDProcessKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDProcessKeeper.h; sourceTree = "<group>"; };
 		98F634D22000963700196023 /* lanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lanced; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,8 @@
 				9800156C2006346200785AF8 /* localConfigure */,
 				98DF00242005237600B4B3C2 /* processKeeper */,
 				98F634E020009EE900196023 /* fileKeeper */,
+				98AB70E8200E2CBE006FA54C /* RunScript.h */,
+				98AB70E7200E2CBD006FA54C /* RunScript.m */,
 				98F634D52000963700196023 /* main.m */,
 			);
 			path = lanced;
@@ -176,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AB70E9200E2CBE006FA54C /* RunScript.m in Sources */,
 				98F634D62000963700196023 /* main.m in Sources */,
 				98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */,
 				98F634DE2000988E00196023 /* LDFileKeeper.m in Sources */,
