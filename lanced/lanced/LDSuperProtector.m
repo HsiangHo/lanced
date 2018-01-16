@@ -70,7 +70,6 @@ static LDSuperProtector *instance;
 #pragma mark - Private methods
 -(void)__initializeLDSuperProtector{
     _isRunning = NO;
-    [[LDLocalConfigure sharedInstance] registerDaemon];
     [self __loadingFromLocalConfigureFile];
 }
 
