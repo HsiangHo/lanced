@@ -35,6 +35,7 @@
 		98AB70CF200D045A006FA54C /* LDSuperProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSuperProtector.m; sourceTree = "<group>"; };
 		98AB70E7200E2CBD006FA54C /* RunScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunScript.m; sourceTree = "<group>"; };
 		98AB70E8200E2CBE006FA54C /* RunScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunScript.h; sourceTree = "<group>"; };
+		98AB70EA200E4504006FA54C /* LDConfigure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LDConfigure.plist; sourceTree = "<group>"; };
 		98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDProcessKeeper.mm; sourceTree = "<group>"; };
 		98DF00262005238800B4B3C2 /* LDProcessKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDProcessKeeper.h; sourceTree = "<group>"; };
 		98F634D22000963700196023 /* lanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lanced; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +110,7 @@
 				98AB70E8200E2CBE006FA54C /* RunScript.h */,
 				98AB70E7200E2CBD006FA54C /* RunScript.m */,
 				98F634D52000963700196023 /* main.m */,
+				98AB70EA200E4504006FA54C /* LDConfigure.plist */,
 			);
 			path = lanced;
 			sourceTree = "<group>";

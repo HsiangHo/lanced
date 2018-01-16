@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileList</key>
+	<array>
+		<string>/Users/jovi/Desktop/untitled folder 3</string>
+		<string>/Users/jovi/Desktop/t2</string>
+	</array>
+	<key>ProcessDict</key>
+	<dict>
+		<key>QQ</key>
+		<string>/Applications/QQ.app/Contents/MacOS/QQ</string>
+		<key>USB Block</key>
+		<string>/Applications/USB Block.app/Contents/MacOS/USB Block</string>
+	</dict>
+</dict>
+</plist>
