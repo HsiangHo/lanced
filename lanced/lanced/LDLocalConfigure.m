@@ -12,6 +12,9 @@
 #define LABEL                           @"com.hyperartflow.lanced"
 #define CONFIGURE_FILE_PATH             [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/LDConfigure.plist"]
 
+#define kFileList                       @"FileList"
+#define kProcessDict                    @"ProcessDict"
+
 static LDLocalConfigure *instance;
 @implementation LDLocalConfigure
 
@@ -46,24 +49,24 @@ static LDLocalConfigure *instance;
 
 -(void)loadDaemon{
     NSString *daemonPath = [NSString stringWithFormat:@"/Library/LaunchDaemons/%@",PLIST_NAME];
-    NSString *cmd = [NSString stringWithFormat:@"launchctl load %@",daemonPath];
+    NSString *cmd = [NSString stringWithFormat:@"sudo launchctl load %@",daemonPath];
     system([cmd UTF8String]);
 }
 
 -(void)unloadDaemon{
     NSString *daemonPath = [NSString stringWithFormat:@"/Library/LaunchDaemons/%@",PLIST_NAME];
-    NSString *cmd = [NSString stringWithFormat:@"launchctl unload %@",daemonPath];
+    NSString *cmd = [NSString stringWithFormat:@"sudo launchctl unload %@",daemonPath];
     system([cmd UTF8String]);
 }
 
 -(NSArray *)protectedFileList{
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:CONFIGURE_FILE_PATH];
-    return [dict valueForKey:@"FileList"];
+    return [dict valueForKey:kFileList];
 }
 
 -(NSDictionary *)protectedProcessDict{
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:CONFIGURE_FILE_PATH];
-    return [dict valueForKey:@"ProcessDict"];
+    return [dict valueForKey:kProcessDict];
 }
 
 @end
