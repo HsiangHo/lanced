@@ -10,7 +10,7 @@
 
 #define PLIST_NAME                      @"com.hyperartflow.lanced.plist"
 #define LABEL                           @"com.hyperartflow.lanced"
-#define CONFIGURE_FILE_PATH             [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/LDConfigure.plist"]
+#define CONFIGURE_FILE_PATH             [[[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent] stringByAppendingString:@"/LDConfigure.plist"]
 
 #define kFileList                       @"FileList"
 #define kProcessDict                    @"ProcessDict"
@@ -28,7 +28,7 @@ static LDLocalConfigure *instance;
 }
 
 -(void)registerDaemon{
-    NSString *Path = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/lanced"];
+    NSString *Path = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/MacOS/lanced2"];
     NSMutableDictionary *plist = [[NSMutableDictionary alloc]init];
     NSString *lable = LABEL;
     BOOL bRunAtLaunch = TRUE;
