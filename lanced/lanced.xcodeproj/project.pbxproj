@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9800156F2006372D00785AF8 /* LDLocalConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9800156E2006372D00785AF8 /* LDLocalConfigure.m */; };
+		987CA31720A5D5940008AC87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987CA31620A5D5940008AC87 /* AppDelegate.m */; };
+		987CA31920A5D5940008AC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987CA31820A5D5940008AC87 /* Assets.xcassets */; };
+		987CA31C20A5D5940008AC87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987CA31A20A5D5940008AC87 /* MainMenu.xib */; };
+		987CA31F20A5D5940008AC87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987CA31E20A5D5940008AC87 /* main.m */; };
+		987CA32420A5D8ED0008AC87 /* LDSuperProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70CF200D045A006FA54C /* LDSuperProtector.m */; };
+		987CA32520A5D8ED0008AC87 /* LDLocalConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9800156E2006372D00785AF8 /* LDLocalConfigure.m */; };
+		987CA32620A5D8ED0008AC87 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */; };
+		987CA32720A5D8ED0008AC87 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634E120009EFE00196023 /* VDKQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		987CA32820A5D8ED0008AC87 /* LDFileKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F634DD2000988E00196023 /* LDFileKeeper.m */; };
+		987CA32920A5D8ED0008AC87 /* RunScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70E7200E2CBD006FA54C /* RunScript.m */; };
 		98AB70D0200D045A006FA54C /* LDSuperProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70CF200D045A006FA54C /* LDSuperProtector.m */; };
 		98AB70E9200E2CBE006FA54C /* RunScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB70E7200E2CBD006FA54C /* RunScript.m */; };
 		98DF00272005238800B4B3C2 /* LDProcessKeeper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98DF00252005238800B4B3C2 /* LDProcessKeeper.mm */; };
@@ -31,6 +41,13 @@
 /* Begin PBXFileReference section */
 		9800156D2006372D00785AF8 /* LDLocalConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDLocalConfigure.h; sourceTree = "<group>"; };
 		9800156E2006372D00785AF8 /* LDLocalConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDLocalConfigure.m; sourceTree = "<group>"; };
+		987CA31320A5D5940008AC87 /* lanced2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lanced2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		987CA31520A5D5940008AC87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		987CA31620A5D5940008AC87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		987CA31820A5D5940008AC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		987CA31B20A5D5940008AC87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		987CA31D20A5D5940008AC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		987CA31E20A5D5940008AC87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98AB70CE200D045A006FA54C /* LDSuperProtector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSuperProtector.h; sourceTree = "<group>"; };
 		98AB70CF200D045A006FA54C /* LDSuperProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSuperProtector.m; sourceTree = "<group>"; };
 		98AB70E7200E2CBD006FA54C /* RunScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunScript.m; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		987CA31020A5D5940008AC87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98F634CF2000963700196023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +88,19 @@
 				9800156E2006372D00785AF8 /* LDLocalConfigure.m */,
 			);
 			name = localConfigure;
+			sourceTree = "<group>";
+		};
+		987CA31420A5D5940008AC87 /* lanced2 */ = {
+			isa = PBXGroup;
+			children = (
+				987CA31520A5D5940008AC87 /* AppDelegate.h */,
+				987CA31620A5D5940008AC87 /* AppDelegate.m */,
+				987CA31820A5D5940008AC87 /* Assets.xcassets */,
+				987CA31A20A5D5940008AC87 /* MainMenu.xib */,
+				987CA31D20A5D5940008AC87 /* Info.plist */,
+				987CA31E20A5D5940008AC87 /* main.m */,
+			);
+			path = lanced2;
 			sourceTree = "<group>";
 		};
 		98AB70CD200D0237006FA54C /* superProtector */ = {
@@ -88,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				98F634D42000963700196023 /* lanced */,
+				987CA31420A5D5940008AC87 /* lanced2 */,
 				98F634D32000963700196023 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				98F634D22000963700196023 /* lanced */,
+				987CA31320A5D5940008AC87 /* lanced2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		987CA31220A5D5940008AC87 /* lanced2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 987CA32320A5D5940008AC87 /* Build configuration list for PBXNativeTarget "lanced2" */;
+			buildPhases = (
+				987CA30F20A5D5940008AC87 /* Sources */,
+				987CA31020A5D5940008AC87 /* Frameworks */,
+				987CA31120A5D5940008AC87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lanced2;
+			productName = lanced2;
+			productReference = 987CA31320A5D5940008AC87 /* lanced2.app */;
+			productType = "com.apple.product-type.application";
+		};
 		98F634D12000963700196023 /* lanced */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F634D92000963700196023 /* Build configuration list for PBXNativeTarget "lanced" */;
@@ -155,6 +211,15 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Jovi;
 				TargetAttributes = {
+					987CA31220A5D5940008AC87 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 					98F634D12000963700196023 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -167,6 +232,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 98F634C92000963700196023;
 			productRefGroup = 98F634D32000963700196023 /* Products */;
@@ -174,11 +240,39 @@
 			projectRoot = "";
 			targets = (
 				98F634D12000963700196023 /* lanced */,
+				987CA31220A5D5940008AC87 /* lanced2 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		987CA31120A5D5940008AC87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987CA31920A5D5940008AC87 /* Assets.xcassets in Resources */,
+				987CA31C20A5D5940008AC87 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		987CA30F20A5D5940008AC87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987CA32420A5D8ED0008AC87 /* LDSuperProtector.m in Sources */,
+				987CA32520A5D8ED0008AC87 /* LDLocalConfigure.m in Sources */,
+				987CA32620A5D8ED0008AC87 /* LDProcessKeeper.mm in Sources */,
+				987CA32720A5D8ED0008AC87 /* VDKQueue.m in Sources */,
+				987CA32820A5D8ED0008AC87 /* LDFileKeeper.m in Sources */,
+				987CA32920A5D8ED0008AC87 /* RunScript.m in Sources */,
+				987CA31F20A5D5940008AC87 /* main.m in Sources */,
+				987CA31720A5D5940008AC87 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98F634CE2000963700196023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +289,46 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		987CA31A20A5D5940008AC87 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				987CA31B20A5D5940008AC87 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		987CA32120A5D5940008AC87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = lanced2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.lanced2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		987CA32220A5D5940008AC87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = lanced2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.lanced2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		98F634D72000963700196023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		987CA32320A5D5940008AC87 /* Build configuration list for PBXNativeTarget "lanced2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				987CA32120A5D5940008AC87 /* Debug */,
+				987CA32220A5D5940008AC87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		98F634CD2000963700196023 /* Build configuration list for PBXProject "lanced" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
