@@ -10,7 +10,8 @@
 #import "RunScript.h"
 #import "LDSuperProtector.h"
 
-#define EXEC_PATH           [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/lanced"]
+//#define EXEC_PATH           [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/lanced"]
+#define EXEC_PATH           [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/MacOS/lanced"]
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
